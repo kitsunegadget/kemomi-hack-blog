@@ -51,7 +51,7 @@ export default function Layout({
 							<HomeIcon style={{ fontSize: 20 }} />
 						</a>
 						<a className={style.iconLink} 
-							href="https://twitter.com" rel="noopener" target="_blank">
+							href="https://twitter.com/yuy_az_" rel="noopener" target="_blank">
 							<TwitterIcon style={{ fontSize: 20 }} />
 						</a>
 						<a className={style.iconLink} 
