@@ -1,0 +1,54 @@
+.outside {
+    margin: 0 15px;
+
+    h2 {
+        line-height: 2rem;
+        margin: 0px 2px;
+        margin-bottom: 10px;
+    }
+}
+
+.firstData {
+    // height: 50px;
+    margin-bottom: 30px;
+    
+    a {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        padding: 0 15px;
+        height: 100px;
+        border: #999 solid 1px;
+        border-radius: 8px;
+        transition: box-Shadow 0.2s;
+        
+        &:hover {
+            box-shadow: 2px 2px 5px #ddd;
+            // filter: drop-shadow(2px, 2px, 10px, #333);
+        }
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+}
+
+.ul {
+    margin: 15px 0;
+    padding-left: 30px;
+} 
+
+.list {
+    position: relative;
+    list-style: none;
+
+    &:before {
+        position: absolute;
+        font-size: 0.6rem;
+        color: #58dd36;
+        content: '📌';
+        left: -20px;
+        top: 4px;
+    }
+}
