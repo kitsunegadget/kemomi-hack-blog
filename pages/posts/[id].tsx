@@ -25,7 +25,10 @@ export default function Post(
 		<Layout>
 			<Head>
 				<meta property="og:title" content={`${postData.title} - Kemomi Hack🐾`} />
+				<meta property="og:description" content="Yu's mini blog." />
+				<meta property="og:image" content="https://kemomihack.netlify.app/icon128.png" />
 				<title>{`${postData.title} - Kemomi Hack🐾`}</title>
+				<script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
 			</Head>
 
 			<div className={styles.breadList}>
@@ -42,6 +45,14 @@ export default function Post(
 				{/* <div><p>Post: { id }</p></div> */}
 				<SetContent content={postData.content} />
 			</article>
+			<div className={styles.twitterButton}>
+				<a 
+					href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+					className="twitter-share-button" 
+					data-show-count="false">
+						Tweet
+				</a>
+			</div>
 		</Layout>
 	)
 }

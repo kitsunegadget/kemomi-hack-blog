@@ -12,10 +12,12 @@ export default function Meta(){
 			/>
 			<link 
 				rel="apple-touch-icon"
+				type="image/png"
 				href="/icon128.png"
 			/>
 			<link
-				rel="icon"
+				rel="shortcut icon"
+				type="image/x-icon"
 				href="/favicon.ico"
 			/>
 		</Head>

@@ -20,7 +20,7 @@ export default function Index({
   return (
     <Layout>
       <Head>
-        
+        <meta property="og:title" content="Kemomi Hack🐾" />
         <meta property="og:description" content="Yu's mini blog." />
         <meta property="og:image" content="https://kemomihack.netlify.app/icon128.png" />
         {/* <title>test</title> */}

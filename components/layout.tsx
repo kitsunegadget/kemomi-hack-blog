@@ -22,6 +22,9 @@ export default function Layout({
 				<meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@kitsunegadget" />
         <meta name="twitter:creater" content="@yuy_az_" />
+				<meta property="og:title" content="Kemomi Hack🐾" />
+				<meta property="og:description" content="Yu's mini blog." />
+				<meta property="og:image" content="https://kemomihack.netlify.app/icon128.png" />
 				<title>{name}</title>
 			</Head>
 
