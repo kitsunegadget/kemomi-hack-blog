@@ -15,6 +15,11 @@ export default function Meta(){
 				type="image/png"
 				href="/icon128.png"
 			/>
+			<link 
+				rel="icon"
+				type="image/png"
+				href="/icon128.png"
+			/>
 			<link
 				rel="shortcut icon"
 				type="image/x-icon"
