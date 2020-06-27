@@ -24,7 +24,8 @@ export default function Post(
 	return (
 		<Layout>
 			<Head>
-	<title>{postData.title}{` - Kemomi Hack🐾`}</title>
+				<meta property="og:title" content={`${postData.title} - Kemomi Hack🐾`} />
+				<title>{`${postData.title} - Kemomi Hack🐾`}</title>
 			</Head>
 
 			<div className={styles.breadList}>

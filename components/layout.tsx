@@ -19,6 +19,9 @@ export default function Layout({
 		<div className={style.gridContainer}>
 			<Meta />
 			<Head>
+				<meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@kitsunegadget" />
+        <meta name="twitter:creater" content="@yuy_az_" />
 				<title>{name}</title>
 			</Head>
 
