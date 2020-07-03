@@ -23,7 +23,7 @@ export default function Post(
 	const { id } = router.query
 	return (
 		<Layout>
-			<Head>
+	    <Head>
 				<meta property="og:title" content={`${postData.title} - Kemomi Hack🐾`} />
 				<meta property="og:description" content="Yu's mini blog." />
 				<meta property="og:image" content="https://kemomihack.netlify.app/icon128.png" />
@@ -77,6 +77,7 @@ export const getStaticProps: GetStaticProps = async ( { params }) =>{
 
 	const content = await MdToHtml(res.content || '')
 	return {
+		unstable_revalidate: 1,
 		props: {
 			postData: {
 				dir: res.dir,
