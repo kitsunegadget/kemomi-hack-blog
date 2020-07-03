@@ -63,7 +63,8 @@ export const getStaticPaths: GetStaticPaths = async () =>{
 		paths: res.map(post => {
 			return {
 				params: {
-					id: post.id
+					// id: post.id,
+					slug: [post.dir, post.id]
 				}
 			}
 		}),
@@ -72,12 +73,13 @@ export const getStaticPaths: GetStaticPaths = async () =>{
 }
 
 export const getStaticProps: GetStaticProps = async ( { params }) =>{
-	const res = getPostIds(`${params.id}.md` as string)
+	const res = getPostIds(`${params.slug[0]}/${params.slug[1]}.md` as string)
 
 	const content = await MdToHtml(res.content || '')
 	return {
 		props: {
 			postData: {
+				dir: res.dir,
 				id: res.id,
 				date: res.date,
 				title: res.title,

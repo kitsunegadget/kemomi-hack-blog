@@ -11,7 +11,8 @@ export default function Index({
   postsData: {
     title: string,
     date: string,
-    id: string
+    id: string,
+    dir: string
   }[]
 }) {
   const firstData = postsData[0]
@@ -30,7 +31,7 @@ export default function Index({
         <h2>{`New!`}</h2>
         <section>
           <div className={styles.firstData}>
-            <Link href="/posts/[firstData.id]" as={`/posts/${firstData.id}`}>
+            <Link href="/posts/[firstData.dir]/[firstData.id]" as={`/posts/${firstData.dir}/${firstData.id}`}>
               <a>
                 <div className={styles.card}>
                   {firstData.date}{': '}{ firstData.title}
@@ -44,9 +45,9 @@ export default function Index({
 
         <section>
           <ul className={styles.ul}>
-            {moreData.map(({ title, date, id }) => (
+            {moreData.map(({ title, date, id, dir }) => (
               <li key={id} className={styles.list}>
-                <Link href="/posts/[id]" as={`/posts/${id}`}>
+                <Link href="/posts/[dir]/[id]" as={`/posts/${dir}/${id}`}>
                   <a>{date}{': '}{ title }</a>
                 </Link>
               </li>
