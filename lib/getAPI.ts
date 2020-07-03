@@ -6,11 +6,11 @@ const postsDirectory = join(process.cwd(), 'posts')
 
 export function getPostIds(fileName: string, fields=[]) {
     // when dir 
-    let dir = fileName.replace(/\\.+/, '')
+    let dir = fileName.replace(/[\\/].+/, '')
     if (dir === fileName) {
-        dir = '/'
+        dir = 'error'
     }
-    const id = fileName.replace(/\.md$/, '').replace(/^.+\\/, '')
+    const id = fileName.replace(/\.md$/, '').replace(/^.+[\\/]/, '')
 
     const fullPath = join(postsDirectory, fileName)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
