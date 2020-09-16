@@ -77,7 +77,7 @@ export const getStaticProps: GetStaticProps = async ( { params }) =>{
 
 	const content = await MdToHtml(res.content || '')
 	return {
-		unstable_revalidate: 1,
+		revalidate: 1,
 		props: {
 			postData: {
 				dir: res.dir,
