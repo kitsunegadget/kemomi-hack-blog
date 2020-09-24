@@ -8,8 +8,13 @@ export default function Meta(){
 			<meta name="theme-color" content="orange" />
 			<meta 
 				name="description" 
+				content="Yu's mini blog."
+			/>
+			<meta 
+				name="keywords" 
 				content="Kemomi Hack, ミニブログ, Kitsune Gadget, tech"
 			/>
+			
 			<link 
 				rel="apple-touch-icon"
 				type="image/png"
